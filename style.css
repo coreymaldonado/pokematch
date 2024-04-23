@@ -14,8 +14,24 @@
   align-items: center;
 }
 
+.label {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  font-style: bold;
+}
+
 header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -38,6 +54,8 @@ header {
 
 .front,
 .back {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -68,4 +86,19 @@ button {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.poketext {
+  color: #fdc903;
+  font-size: 3em;
+  text-shadow: 0 0 10px #3758aa, 0 0 10px #3758aa, 0 0 10px #3758aa,
+    0 0 10px #3758aa, 0 0 10px #3758aa, 0 0 10px #3758aa;
+  padding: 0px;
+  margin: 0px;
+  /* text-shadow: 5px 0 #3758aa, -5px 0 #3758aa, 0 5px #3758aa, 0 -5px #3758aa,
+    3px 3px #3758aa, -3px -3px #3758aa, 3px -3px #3758aa, -3px 3px #3758aa; */
 }
