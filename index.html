@@ -74,8 +74,8 @@
         </div>
       </header>
       <div id="alert" class="alert hidden">
-        <span id="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-        <strong>Congratulations!</strong> Play again? <button onclick="resetGame(); this.parentElement.style.display='none';" style="height:40px">Reset</button>
+        <span id="closebtn" onclick="this.parentElement.classList.toggle('hidden');">&times;</span> 
+        <strong>Congratulations!</strong> Play again? <button onclick="resetGame(); this.parentElement.classList.toggle('hidden');" style="height:40px">Reset</button>
       </div>
       <div id="game">
         <p></p>
