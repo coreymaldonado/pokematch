@@ -44,6 +44,10 @@ button {
   font-style: bold;
 }
 
+.checkbox {
+  margin-right: 210px;
+}
+
 header {
   display: flex;
   flex-direction: column;
