@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PokeMatch</title>
     <link rel="stylesheet" href="/style.css" />
-    <script src="/script.js" async></script>
+    <!-- <script src="/script.js" async></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/pokeball.png">
   </head>
   <body>
@@ -72,12 +73,16 @@
           </label>
         </div>
       </header>
-
+      <div id="alert" class="alert hidden">
+        <span id="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <strong>Congratulations!</strong> Play again? <button onclick="resetGame(); this.parentElement.style.display='none';" style="height:40px">Reset</button>
+      </div>
       <div id="game">
+        <p></p>
         <!-- <p id="output"></p> -->
       </div>
     </div>
 
-    <!-- <script src="/script.js" /> -->
+    <script src="/script.js" async /></script>
   </body>
 </html>

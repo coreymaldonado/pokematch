@@ -85,7 +85,9 @@ const clickCard = (event) => {
     } else {
       matches++;
       if (matches == 8) {
-        console.log("winner");
+        var element = document.getElementById("alert");
+        element.classList.toggle("hidden");
+        confetti();
       }
       firstPick = null;
       isPaused = false;
@@ -104,7 +106,7 @@ const getFrontAndBackFromCard = (card) => {
   return [front, back];
 };
 
-const resetGame = () => {
+const resetGame = async () => {
   game.innerHTML = "";
   isPaused = true;
   firstPick = null;

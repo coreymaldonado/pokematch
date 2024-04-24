@@ -4,6 +4,7 @@
 }
 
 .container {
+  user-select: none;
   font-family: pokemon;
   letter-spacing: 5px;
   margin: 0 auto;
@@ -101,4 +102,17 @@ button {
   margin: 0px;
   /* text-shadow: 5px 0 #3758aa, -5px 0 #3758aa, 0 5px #3758aa, 0 -5px #3758aa,
     3px 3px #3758aa, -3px -3px #3758aa, 3px -3px #3758aa, -3px 3px #3758aa; */
+}
+
+.alert {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #2eb886;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: normal;
+}
+
+.hidden {
+  display: none;
 }
