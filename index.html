@@ -13,73 +13,78 @@
     <div class="container">
       <header>
         <h1 class="poketext">PokeMatch</h1>
-        <div class="flex"">
-          <div class="container">
-            <button onclick="resetGame()" style="height:40px">Reset</button>
-          </div>
-          <span class="label">Generation: </span>
-          <label class="label"
-            >One
-            <input type="checkbox" checked="checked" />
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="label"
-            >Two
-            <input type="checkbox" checked="checked" />
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="label"
-            >Three
-            <input type="checkbox" checked="checked" />
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="label"
-            >Four
-            <input type="checkbox" checked="checked" />
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="label"
-            >Five
-            <input type="checkbox" checked="checked" />
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="label"
-            >Six
-            <input type="checkbox" checked="checked" />
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="label"
-            >Seven
-            <input type="checkbox" checked="checked" />
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="label"
-            >Eight
-            <input type="checkbox" checked="checked" />
-            <span class="checkmark"></span>
-          </label>
-
-          <label class="label"
-            >Nine
-            <input type="checkbox" checked="checked" />
-            <span class="checkmark"></span>
-          </label>
-        </div>
       </header>
+      <div class="twoColumns">
+        <div class="columnOne">
+          <!-- <div class="flex""> -->
+            <div class="container">
+              <button onclick="resetGame()" style="height:40px">Reset</button>
+            </div>
+            <span class="label">Generation: </span>
+            <label class="label"
+              >One
+              <input type="checkbox" checked="checked" />
+              <!-- <span class="checkmark"></span> -->
+            </label>
+  
+            <label class="label"
+              >Two
+              <input type="checkbox" checked="checked" />
+              <!-- <span class="checkmark"></span> -->
+            </label>
+  
+            <label class="label"
+              >Three
+              <input type="checkbox" checked="checked" />
+              <!-- <span class="checkmark"></span> -->
+            </label>
+  
+            <label class="label"
+              >Four
+              <input type="checkbox" checked="checked" />
+              <!-- <span class="checkmark"></span> -->
+            </label>
+  
+            <label class="label"
+              >Five
+              <input type="checkbox" checked="checked" />
+              <!-- <span class="checkmark"></span> -->
+            </label>
+  
+            <label class="label"
+              >Six
+              <input type="checkbox" checked="checked" />
+              <!-- <span class="checkmark"></span> -->
+            </label>
+  
+            <label class="label"
+              >Seven
+              <input type="checkbox" checked="checked" />
+              <!-- <span class="checkmark"></span> -->
+            </label>
+  
+            <label class="label"
+              >Eight
+              <input type="checkbox" checked="checked" />
+              <!-- <span class="checkmark"></span> -->
+            </label>
+  
+            <label class="label"
+              >Nine
+              <input type="checkbox" checked="checked" />
+              <!-- <span class="checkmark"></span> -->
+            </label>
+          <!-- </div> -->
+        </div>
+        <div class="columnTwo">
+          <div id="game">
+            <p></p>
+          </div>
+        </div>
+      </div>
       <div id="alert" class="alert hidden">
         <span id="closebtn" onclick="this.parentElement.classList.toggle('hidden');">&times;</span> 
         <strong>Congratulations!</strong> Play again? <button onclick="resetGame(); this.parentElement.classList.toggle('hidden');" style="height:40px">Reset</button>
-      </div>
-      <div id="game">
-        <p></p>
-        <!-- <p id="output"></p> -->
       </div>
     </div>
 
