@@ -102,7 +102,7 @@ header {
   margin: 0px;
 }
 
-.alert {
+/* .alert {
   padding: 20px;
   margin-bottom: 10px;
   background-color: #2eb886;
@@ -115,7 +115,7 @@ header {
   margin-left: -179px;
   z-index: 2;
   border-radius: 10px;
-}
+} */
 
 .hidden {
   display: none;
