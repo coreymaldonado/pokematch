@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PokeMatch</title>
     <link rel="stylesheet" href="/style.css" />
-    <!-- <script src="/script.js" async></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/pokeball.png">
   </head>
@@ -14,77 +14,27 @@
       <header>
         <h1 class="poketext">PokeMatch</h1>
       </header>
-      <div class="twoColumns">
         <div class="columnOne">
-          <!-- <div class="flex""> -->
+          <!-- <div class="container">
+            <button onclick="resetGame()" type="button" class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 font-sans">Settings</button>
+          </div> -->
             <div class="container">
-              <button onclick="resetGame()" style="height:40px">Reset</button>
+              <button onclick="resetGame()" type="button" class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 font-sans">Reset</button>
             </div>
-            <span class="label">Generation: </span>
-            <label class="label"
-              >&nbsp;One
-              <input type="checkbox" checked="checked" />
-              <!-- <span class="checkmark"></span> -->
-            </label>
   
-            <label class="label"
-              >&nbsp;Two
-              <input type="checkbox" checked="checked" />
-              <!-- <span class="checkmark"></span> -->
-            </label>
-  
-            <label class="label"
-              >&nbsp;Three
-              <input type="checkbox" checked="checked" />
-              <!-- <span class="checkmark"></span> -->
-            </label>
-  
-            <label class="label"
-              >&nbsp;Four
-              <input type="checkbox" checked="checked" />
-              <!-- <span class="checkmark"></span> -->
-            </label>
-  
-            <label class="label"
-              >&nbsp;Five
-              <input type="checkbox" checked="checked" />
-              <!-- <span class="checkmark"></span> -->
-            </label>
-  
-            <label class="label"
-              >&nbsp;Six
-              <input type="checkbox" checked="checked" />
-              <!-- <span class="checkmark"></span> -->
-            </label>
-  
-            <label class="label"
-              >&nbsp;Seven
-              <input type="checkbox" checked="checked" />
-              <!-- <span class="checkmark"></span> -->
-            </label>
-  
-            <label class="label"
-              >&nbsp;Eight
-              <input type="checkbox" checked="checked" />
-              <!-- <span class="checkmark"></span> -->
-            </label>
-  
-            <label class="label"
-              >&nbsp;Nine
-              <input type="checkbox" checked="checked" />
-              <!-- <span class="checkmark"></span> -->
-            </label>
-          <!-- </div> -->
+            <!-- Original Checkbox -->
+
+            
+            
         </div>
         <div class="columnTwo">
           <div id="game">
             <p></p>
           </div>
         </div>
-      </div>
       <div id="alert" class="alert hidden">
         <span id="closebtn" onclick="this.parentElement.classList.toggle('hidden');">&times;</span> 
-        <strong>Congratulations!</strong> Play again? <button onclick="resetGame(); this.parentElement.classList.toggle('hidden');" style="height:40px">Reset</button>
+        <strong>Congratulations!</strong> Play again? <button type="button" class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 font-sans" onclick="resetGame(); this.parentElement.classList.toggle('hidden');" style="height:40px">Reset</button>
       </div>
     </div>
 

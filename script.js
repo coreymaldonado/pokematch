@@ -120,23 +120,11 @@ const resetGame = async () => {
 
 resetGame();
 
-// const pokeAPIBaseURL = "https://pokeapi.co/api/v2/pokemon/";
+// Dropdown
+$(".checkbox-dropdown").click(function () {
+  $(this).toggleClass("is-active");
+});
 
-// const loadPokemon = async () => {
-//   const randomIds = new Set();
-//   let randomNumber = 1;
-//   while (randomIds.size < 1025) {
-//     randomIds.add(randomNumber);
-//     randomNumber += 1;
-//   }
-//   console.log(...randomIds);
-//   const randomIdsArr = [...randomIds];
-//   for (let i = 0; i < randomIdsArr.length; i++) {
-//     const res = await fetch(pokeAPIBaseURL + randomIdsArr[i]);
-//     const pokemon = await res.json();
-//     console.log(pokemon.name);
-//   }
-//   // document.getElementById("output").innerHTML = pokemon.name;
-// };
-
-// loadPokemon();
+$(".checkbox-dropdown ul").click(function (e) {
+  e.stopPropagation();
+});
