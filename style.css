@@ -50,7 +50,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 90px);
   grid-template-rows: repeat(4, 90px);
-  grid-gap: 3px;
+  grid-gap: 1px;
 }
 
 .card {
@@ -112,8 +112,9 @@ header {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -200px;
+  margin-left: -179px;
   z-index: 2;
+  border-radius: 10px;
 }
 
 .hidden {
